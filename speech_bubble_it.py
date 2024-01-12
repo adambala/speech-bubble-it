@@ -72,7 +72,7 @@ def process(image_path: Path, output_path: Path, mirror: bool, orientation: int)
     check_file_format(output_path, SUPPORTED_FORMATS)
 
     original_image = open_image(image_path).convert(
-        "RGBA"  # RGBA to ensure transperency in the result
+        "RGBA"  # to ensure transperency in the result
     )
     speech_bubble_image = open_image(
         Path(os.path.join(ASSETS_DIR, SPEECH_BUBBLE_FILENAME))
@@ -80,7 +80,7 @@ def process(image_path: Path, output_path: Path, mirror: bool, orientation: int)
 
     # to prevent unexpected rotation of images with EXIF orientation tag != 1
     ImageOps.exif_transpose(original_image, in_place=True)
-    
+
     speech_bubble_image = speech_bubble_image.resize(original_image.size)
     speech_bubble_image = transform_image(
         speech_bubble_image, mirror, orientation
@@ -88,7 +88,7 @@ def process(image_path: Path, output_path: Path, mirror: bool, orientation: int)
 
     result = ImageChops.subtract_modulo(original_image, speech_bubble_image)
 
-    # if the output format doesn't have the alpha channel, fill it with white
+    # these formats does not support transperency, so it fills alpha channel with color
     if output_path.suffix in (".jpg", ".jpeg", "bmp"):
         alpha = result.split()[3]
         bg = Image.new("RGB", result.size, ImageColor.getrgb("WHITE"))
