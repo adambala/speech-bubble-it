@@ -75,7 +75,8 @@ def process(image_path: Path, output_path: Path, mirror: bool, orientation: int)
         "RGBA"  # RGBA to ensure transperency in the result
     )
     speech_bubble_image = open_image(
-        Path(os.path.join(ASSETS_DIR, SPEECH_BUBBLE_FILENAME)))
+        Path(os.path.join(ASSETS_DIR, SPEECH_BUBBLE_FILENAME))
+    )
 
     # to prevent unexpected rotation of images with EXIF orientation tag != 1
     ImageOps.exif_transpose(original_image, in_place=True)
