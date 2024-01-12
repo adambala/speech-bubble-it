@@ -22,14 +22,18 @@ SUPPORTED_FORMATS = (
 
 
 def check_file_format(file_path: Path, supported_formats: tuple) -> None:
-    """Checks if the file extension is supported."""
+    """
+    Checks if the file extension is supported.
+    """
 
     if file_path.suffix not in supported_formats:
         raise ValueError(f"Unsupported file extension {file_path.suffix}. Only {supported_formats} are supported.")
 
 
 def open_image(image_path: Path) -> Image.Image:
-    """Return an Image object of image."""
+    """
+    Return an Image object of image.
+    """
 
     with Image.open(image_path) as img:
         img.load()
@@ -38,7 +42,9 @@ def open_image(image_path: Path) -> Image.Image:
 
 
 def transform_image(img: Image.Image, mirror: bool, orientation: int) -> Image.Image:
-    """Changes an image according to command arguments."""
+    """
+    Changes an image according to command arguments.
+    """
 
     if mirror:
         img = img.transpose(Image.FLIP_LEFT_RIGHT)
@@ -53,7 +59,10 @@ def transform_image(img: Image.Image, mirror: bool, orientation: int) -> Image.I
 
 
 def process(image_path: Path, output_path: Path, mirror: bool, orientation: int) -> None:
-    """Adds a speech bubble on image and saves it."""
+    """
+    Adds a speech bubble on image and saves it.
+    """
+    
     if not image_path.is_file():
         raise FileNotFoundError(f"Image file {image_path} not found")
 
@@ -84,7 +93,9 @@ def process(image_path: Path, output_path: Path, mirror: bool, orientation: int)
 
 
 def main() -> None:
-    """Initializes command arguments."""
+    """
+    Initializes command arguments.
+    """
 
     logging.basicConfig(
         stream=sys.stdout,
