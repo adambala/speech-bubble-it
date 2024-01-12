@@ -1,5 +1,5 @@
 # Speech Bubble It
-Speech Bubble It is a Python script that puts a speech bubble on an image
+Speech Bubble It is a Python script that puts a speech bubble on an image.
 
 ## About
 Online communication is accompanied by various jokes in the form of images (mostly memes). These also include speech bubbles.
@@ -7,14 +7,13 @@ Online communication is accompanied by various jokes in the form of images (most
 The point of such images is that the sender presents the user in a chat as a character or a thing that speaks its message in a speech bubble.
 
 ## Example
+.\input\input.jpg                                                                    |.\output\output.png
+:-----------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------:
+![](https://github.com/adambala/speech-bubble-it/blob/main/input/input.jpg?raw=true) |![](https://github.com/adambala/speech-bubble-it/blob/main/output/output.png?raw=true)
 
 ```sh
 python speech_bubble_it.py .\input\input.jpg .\output\output.png
 ```
-
-.\input\input.jpg                                                                    |.\output\output.png
-:-----------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------:
-![](https://github.com/adambala/speech-bubble-it/blob/main/input/input.jpg?raw=true) |![](https://github.com/adambala/speech-bubble-it/blob/main/output/output.png?raw=true)
 
 ## Instructions
 This script does not require large resources to create an image with a speech bubble. It requires `Python 3.10` or above and these dependencies:
