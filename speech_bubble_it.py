@@ -1,17 +1,3 @@
-"""
-TO DO
-- Поддержка фото из сети
-
-Known issues:
-- Незакрашенный столбец (пример: Дефо Крэйзи Дэйв)
-
-File format supported:
-- Input - png, jpg, webp, gif (first frame will be used)
-- Output - png, gif,
-
-Not supported - svg, heic, raw (partially)
-"""
-
 from PIL import Image, ImageOps, ImageColor, ImageChops
 
 from argparse import ArgumentParser, BooleanOptionalAction
