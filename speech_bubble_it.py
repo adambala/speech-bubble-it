@@ -79,6 +79,7 @@ def process(image_path: Path, output_path: Path, mirror: bool, orientation: int)
 
     # to prevent unexpected rotation of images with EXIF orientation tag != 1
     ImageOps.exif_transpose(original_image, in_place=True)
+    
     speech_bubble_image = speech_bubble_image.resize(original_image.size)
     speech_bubble_image = transform_image(
         speech_bubble_image, mirror, orientation
