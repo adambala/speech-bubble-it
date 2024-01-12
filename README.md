@@ -6,6 +6,16 @@ Online communication is accompanied by various jokes in the form of images (most
 
 The point of such images is that the sender presents the user in a chat as a character or a thing that speaks its message in a speech bubble.
 
+## Example
+
+```sh
+python speech_bubble_it.py .\input\input.jpg .\output\output.png
+```
+
+.\input\input.jpg                                                                    |.\output\output.png
+:-----------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------:
+![](https://github.com/adambala/speech-bubble-it/blob/main/input/input.jpg?raw=true) |![](https://github.com/adambala/speech-bubble-it/blob/main/output/output.png?raw=true)
+
 ## Instructions
 This script does not require large resources to create an image with a speech bubble. It requires `Python 3.10` or above and these dependencies:
 - Pillow
@@ -28,16 +38,6 @@ You can transform your speech bubble by these flags:
 - `-h`, `--help` — help information;
 - `-m`, `--mirror` — flips speech bubble horizontally;
 - `-o`, `--orientation` — changes speech bubble orientation (1: on the top; 2: on the left; 3: on the bottom; 4: on the right).
-
-## Example
-
-```sh
-python speech_bubble_it.py .\input\input.jpg .\output\output.png
-```
-
-.\input\input.jpg          |  .\output\output.png
-:-------------------------:|:-------------------------:
-![](N/A)                   |  ![](N/A)
 
 ## Contributions
 This repository is open for contributing. So feel free to open issues and make pull requests.
