@@ -27,7 +27,7 @@ python speech_bubble_it.py <image_file> <output_file>
 ```
 
 where
-- `<image_file>` is the path of an image you want to put speech bubble on;
+- `<image_file>` is the path to an image you want to put speech bubble on;
 - `<output_file>` is the path to the file where the result will be written to.
 
 The script supports such image formats as `.png`, `.jpg`, `.jpeg`, `.gif`, `.bmp`, `.webp` and `.tiff`.
