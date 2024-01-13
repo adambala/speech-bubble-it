@@ -42,5 +42,6 @@ You can transform your speech bubble by these flags:
 This repository is open for contributing. So feel free to open issues and make pull requests.
 
 ## TODO
-- [ ] Implement the support of images from web
-- [ ] Use vector image of the speech bubble instead of `.png`
+- [ ] The support of images from web
+- [ ] The support of GIF animations
+- [ ] Vector image of the speech bubble instead of `.png`
