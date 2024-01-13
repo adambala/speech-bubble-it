@@ -23,12 +23,12 @@ You can install them by running `pip install -r requirements.txt`
 
 Speech Bubble It can be used from the command line:
 ```sh
-python speech_bubble_it.py <image path> <output path>
+python speech_bubble_it.py <image_file> <output_file>
 ```
 
 where
-- `<image path>` is the path of an image you want to put speech bubble on;
-- `<output path>` is the path to the file where the result will be written to.
+- `<image_file>` is the path of an image you want to put speech bubble on;
+- `<output_file>` is the path to the file where the result will be written to.
 
 The script supports such image formats as `.png`, `.jpg`, `.jpeg`, `.gif`, `.bmp`, `.webp` and `.tiff`.
 
