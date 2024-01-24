@@ -81,7 +81,7 @@ def process(image_path: Path, output_path: Path, mirror: bool, orientation: int)
     result = ImageChops.subtract_modulo(original_image, speech_bubble_image)
 
     # these formats does not support transperency, so it fills alpha channel with color
-    if output_path.suffix in (".jpg", ".jpeg", "bmp"):
+    if output_path.suffix in (".jpg", ".jpeg", ".bmp"):
         alpha = result.split()[3]
         bg = Image.new("RGB", result.size, ImageColor.getrgb("WHITE"))
         bg.paste(result, mask=alpha)
