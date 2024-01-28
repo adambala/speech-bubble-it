@@ -7,7 +7,7 @@ Online communication is accompanied by various jokes in the form of images (most
 The point of such images is that the sender presents the user in a chat as a character or a thing that speaks its message in a speech bubble.
 
 ## Example
-.\input\input.jpg                                                                    |.\output\output.png
+./input/input.jpg                                                                    |./output/output.png
 :-----------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------:
 ![](https://github.com/adambala/speech-bubble-it/blob/main/input/input.jpg?raw=true) |![](https://github.com/adambala/speech-bubble-it/blob/main/output/output.png?raw=true)
 
